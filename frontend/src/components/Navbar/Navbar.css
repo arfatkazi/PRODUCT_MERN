@@ -32,10 +32,12 @@ body.dark-mode {
   background-color: #062b68;
   color: #ffffff;
 }
+
 .navWhite {
   background-color: #545aa5;
   color: #ffffff;
 }
+
 .navContainer > .left {
   display: flex;
   justify-content: center;
@@ -47,12 +49,18 @@ body.dark-mode {
   font-size: 2.5rem;
   text-decoration: none;
   color: inherit;
+  color: #3a88ae;
+  background-image: linear-gradient(75deg, #4c9cc5 34%, #233c89 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .cartplus {
   font-size: 1.8rem;
   margin-top: 0.8rem;
-  color: inherit;
+  color: #3385cb;
 }
 
 .navContainer > .right {
@@ -81,5 +89,4 @@ body.dark-mode {
 .day:hover,
 .night:hover {
   transform: scale(1.1);
-  color: var(--dark-text);
 }

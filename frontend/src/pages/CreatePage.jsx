@@ -1,7 +1,6 @@
-import { useState } from "react";
 import "./Create.css";
+import { useState } from "react";
 import { useProductStore } from "../store/Product";
-import { toast } from "react-toastify";
 const CreatePage = () => {
   const [newProduct, setNewProduct] = useState({
     name: "",
@@ -29,7 +28,7 @@ const CreatePage = () => {
   return (
     <>
       <div className="createContainer">
-        <h1>Create New Product</h1>
+        <h1 className="createtitle">Create New Product</h1>
         <form action="#" onSubmit={submitHandler}>
           <input
             type="text"

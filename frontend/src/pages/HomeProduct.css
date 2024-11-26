@@ -1,0 +1,29 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem;
+  flex-direction: column;
+}
+
+.homeContainer > h2 {
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+}
+
+.rocket {
+  color: #3389cd;
+}
+
+.createlink {
+  color: #3a88ae;
+  background-image: linear-gradient(75deg, #4c9cc5 54%, #233c89 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.currenttitle {
+  color: #4574ac;
+  font-size: 2.2rem;
+}

@@ -20,7 +20,7 @@ const Navbars = () => {
   }, [colorMode]);
 
   return (
-    <div className={`navContainer  `}>
+    <div className={`navContainer`}>
       <div className="left">
         <Link to="/" className="link">
           Product store
