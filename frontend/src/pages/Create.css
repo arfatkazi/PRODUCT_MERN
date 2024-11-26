@@ -1,0 +1,49 @@
+.createContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.createContainer > h1 {
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: #1a202c;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+}
+
+form > input {
+  padding: 0.6rem 20rem 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+  color: #d2ddf2;
+  background: transparent;
+  background-color: #1a202c;
+  border: none;
+  border: 1px solid #2e3440;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.btn {
+  background: none;
+  color: #fff;
+  border: none;
+  margin-top: 1rem;
+  background-color: #7fb7d9;
+  padding: 0.8rem 14rem;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+}

@@ -1,0 +1,85 @@
+:root {
+  --light-bg: #e9e4e9;
+  --dark-bg: #161a22;
+  --light-text: #ffffff;
+  --dark-text: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+.navContainer {
+  max-width: 1340px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60vw;
+  padding-top: 1rem;
+  margin-left: 3rem;
+}
+.navBlack {
+  background-color: #062b68;
+  color: #ffffff;
+}
+.navWhite {
+  background-color: #545aa5;
+  color: #ffffff;
+}
+.navContainer > .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navContainer > .left > .link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cartplus {
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
+  color: inherit;
+}
+
+.navContainer > .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.plussquare,
+.day,
+.night {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  color: inherit;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.day,
+.night {
+  margin-top: 0.2rem;
+}
+
+.plussquare:hover,
+.day:hover,
+.night:hover {
+  transform: scale(1.1);
+  color: var(--dark-text);
+}
