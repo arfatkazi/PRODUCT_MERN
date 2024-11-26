@@ -1,5 +1,5 @@
 :root {
-  --light-bg: #e9e4e9;
+  --light-bg: #f8f8f8;
   --dark-bg: #161a22;
   --light-text: #ffffff;
   --dark-text: #000000;
@@ -89,4 +89,44 @@ body.dark-mode {
 .day:hover,
 .night:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .navContainer {
+    max-width: 500px;
+    gap: 5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    margin-top: 0.6rem;
+  }
+
+  .navContainer > .left {
+    gap: 15px;
+  }
+
+  .navContainer > .left > .link {
+    font-size: 1.5rem;
+  }
+
+  .cartplus {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .navContainer > .right {
+    gap: 15px;
+  }
+
+  .plussquare,
+  .day,
+  .night {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .day,
+  .night {
+    margin-top: 0.2rem;
+  }
 }

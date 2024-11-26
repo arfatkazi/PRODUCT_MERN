@@ -50,4 +50,9 @@ form > input {
 
 .createtitle {
   color: #fff;
+  color: #3a88ae;
+  background-image: linear-gradient(75deg, #4c9cc5 34%, #233c89 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

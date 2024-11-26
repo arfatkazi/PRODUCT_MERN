@@ -49,4 +49,20 @@ export const useProductStore = create((set) => ({
       return { success: false, message: "An unexpected error occurred" };
     }
   },
+  fetchProduct: async () => {
+    try {
+      const res = await fetch("/api/products/get");
+      const data = await res.json();
+
+      if (res.ok) {
+        set({ products: data.data });
+        toast.success("Fetched products successfully");
+      } else {
+        toast.error(data.message || "Failed to fetch products");
+      }
+    } catch (err) {
+      console.error("Error fetching products:", err);
+      toast.error("Failed to fetch products: " + (err.message || err));
+    }
+  },
 }));
