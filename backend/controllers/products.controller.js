@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import Product from "../models/product.model.js";
 
 export const createProduct = async (req, res) => {
+  console.log("Incoming request body:", req.body);
   try {
     const { name, price, image } = req.body;
 

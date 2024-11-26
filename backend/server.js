@@ -1,3 +1,4 @@
+import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import connectDB from "./config/db.js";
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 // middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 // routes
 app.use("/api/products", ProductRoute);
