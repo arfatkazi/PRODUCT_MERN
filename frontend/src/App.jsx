@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import CreatePage from "./pages/CreatePage.jsx";
 import Navbars from "./components/Navbar/Navbars.jsx";
-import UpdateModal from "./components/UpdateModal.jsx";
+// import UpdateModal from "./components/UpdateModal.jsx";
 const App = () => {
   return (
     <div className="main">
@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
       </Routes>
-      <UpdateModal />
+      {/* <UpdateModal /> */}
     </div>
   );
 };

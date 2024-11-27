@@ -21,14 +21,16 @@ const Card = ({ product }) => {
       <img src={product.image} alt={product.name} className="productImage" />
       <h2 className="productName">{product.name}</h2>
       <h3 className="productPrice">₹{product.price}</h3>
-      <MdOutlineDriveFileRenameOutline
-        className="updatebtn"
-        // onClick={() => updateHandler(product._id)}
-      />
-      <IoRemoveCircleSharp
-        className="removebtn"
-        onClick={() => deleteHandler(product._id)}
-      />
+      <div className="btncontainer">
+        <MdOutlineDriveFileRenameOutline
+          className="updatebtn"
+          // onClick={() => updateHandler(product._id)}
+        />
+        <IoRemoveCircleSharp
+          className="removebtn"
+          onClick={() => deleteHandler(product._id)}
+        />
+      </div>
     </div>
   );
 };
