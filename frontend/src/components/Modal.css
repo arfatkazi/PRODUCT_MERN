@@ -1,0 +1,76 @@
+.modalContainer {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  overflow: hidden;
+}
+.modal-1 {
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23rem;
+  color: #e9f1fd;
+}
+
+.modal-1 > h2 {
+  font-size: 1.3vw;
+  text-transform: capitalize;
+  padding-top: 0.3vw;
+}
+
+.modalform {
+  padding: 5.5rem 1.5vw;
+}
+
+.modalContainer > .modalform > input {
+  border: 1px solid #404a5a;
+}
+
+.modalContainer > .modalform > input::placeholder {
+  color: rgba(240, 248, 255, 0.742);
+}
+
+.modalcross {
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.modal3 {
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+}
+.modalupdate,
+.modalcancel {
+  border: none;
+  background: none;
+  color: #ffffff;
+  background-color: #8bc7ea;
+  font-size: 1.2rem;
+  padding: 0.4vw 1rem;
+  margin: 0.3rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modalupdate:hover {
+  background-color: #4d87a8;
+}
+
+.modalcancel {
+  background-color: transparent;
+}
+
+.modalcancel:hover {
+  background-color: rgb(206, 13, 13);
+}
