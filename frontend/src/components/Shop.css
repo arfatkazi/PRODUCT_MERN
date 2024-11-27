@@ -1,0 +1,40 @@
+.homeContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.currenttitle {
+  font-size: 4vw;
+  margin-bottom: 20px;
+  color: #3a88ae;
+  background-image: linear-gradient(75deg, #4c9cc5 34%, #233c89 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 4rem;
+}
+
+.rocket:nth-last-child(1) {
+  margin-left: 10px;
+  font-size: 4vw;
+  padding-top: 0.4rem;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.createlink {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.createlink:hover {
+  color: #2980b9;
+}

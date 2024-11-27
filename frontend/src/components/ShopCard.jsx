@@ -1,7 +1,9 @@
+import "./Shop.css";
 import { useProductStore } from "../store/Product";
 import { useEffect } from "react";
 import { IoIosRocket } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Card from "./Navbar/Card";
 
 const ShopCard = () => {
   const { fetchProduct, products } = useProductStore();
@@ -20,15 +22,7 @@ const ShopCard = () => {
       {products.length > 0 ? (
         <div className="productList">
           {products.map((product) => (
-            <div key={product._id} className="productcard">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="productImage"
-              />
-              <h2 className="productName">{product.name}</h2>
-              <h3 className="productPrice">${product.price}</h3>
-            </div>
+            <Card key={product._id} product={product} />
           ))}
         </div>
       ) : (
